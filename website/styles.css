@@ -1,0 +1,37 @@
+:root{
+  --prime-jet-black: #0f0d09;
+  --prime-dark-navy: #02142F;
+  --prime-navy: #0F204B;
+  --prime-dark-gold: #A67125;
+  --prime-gold: #E8bF64;
+  --prime-white: #fafafc;
+}
+*{box-sizing:border-box}
+body{font-family:'Lato',system-ui,-apple-system,Segoe UI,Roboto,Arial;line-height:1.4;color:var(--prime-jet-black);background:var(--prime-white);margin:0}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.site-hero{background:linear-gradient(90deg,var(--prime-dark-navy) 0%, var(--prime-navy) 60%, #ffffff 100%);color:var(--prime-white);padding:32px 0}
+.hero-inner{display:flex;align-items:center;gap:24px}
+.logo{width:140px;height:auto;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.25)}
+.hero-text h1{font-family:'Montserrat',sans-serif;margin:0;font-size:28px;letter-spacing:0.5px}
+.motto{font-size:18px;margin:6px 0;color:var(--prime-gold)}
+.accent{color:var(--prime-gold);font-weight:700}
+.call{font-size:13px;color:rgba(250,250,252,0.9);margin-top:6px}
+
+.card{background:linear-gradient(180deg,rgba(255,255,255,0.95),rgba(250,250,252,1));padding:20px;margin:20px 0;border-radius:10px;box-shadow:0 6px 16px rgba(2,20,47,0.06)}
+.card h2{font-family:'Montserrat',sans-serif;color:var(--prime-dark-navy);margin-top:0}
+.services-list{list-style:disc;margin-left:20px}
+
+.ethos-grid{display:flex;gap:18px;justify-content:space-between;align-items:center}
+.ethos-item{flex:1;text-align:center}
+.ethos-item img{max-width:120px;height:auto;display:block;margin:0 auto 8px}
+.ethos-item strong{display:block;color:var(--prime-dark-navy)}
+
+.contact-card .contact-line{margin:8px 0}
+.contact-line a{color:var(--prime-dark-navy);text-decoration:none}
+
+.site-footer{background:var(--prime-white);border-top:1px solid rgba(15,32,75,0.06);padding:18px 0;text-align:center}
+
+@media (max-width:760px){
+  .hero-inner{flex-direction:column;text-align:center}
+  .ethos-grid{flex-direction:column}
+}
