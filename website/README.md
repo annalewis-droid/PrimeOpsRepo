@@ -61,3 +61,15 @@
 
  - Images referenced in `index.html` are taken from `prime-handyman-app/public/` so they are already in this repository. If you want them copied into `website/assets/`, I can do that.
  - If you want, I can create the GitHub repo and connect Cloudflare for you — you'll need to authorize my access or provide the repo URL and Cloudflare account details.
+
+GitHub Actions (automated deploy)
+
+- This repository includes a GitHub Actions workflow at `.github/workflows/deploy-pages.yml` that can deploy the `website` directory to Cloudflare Pages on every push to `main`.
+
+- Before the workflow can run, add these repository secrets in GitHub (Settings → Secrets and variables → Actions → New repository secret):
+	- `CLOUDFLARE_API_TOKEN` — the API token you created (Pages+DNS or Pages-only depending on your choice).
+	- `CLOUDFLARE_ACCOUNT_ID` — your Cloudflare Account ID (available in the Cloudflare dashboard under Overview).
+	- `CLOUDFLARE_PROJECT_NAME` — the Pages project name (the Pages dashboard shows this when you create a Pages project).
+
+- Do NOT commit the API token into the repository files. Add it as a secret only.
+
