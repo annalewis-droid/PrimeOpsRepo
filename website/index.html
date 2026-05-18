@@ -10,64 +10,115 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-hero">
-      <div class="container hero-inner">
-        <img class="logo" src="../prime-handyman-app/public/Logo.png" alt="Prime Handyman Service logo">
-        <div class="hero-text">
-          <h1>Prime Handyman Service LLC</h1>
-          <p class="motto">Everyday fixes. <span class="accent">Prime quality.</span></p>
-          <p class="call">Professional • Accountable • Transparent</p>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <div class="logo-mark">
+          <img src="../prime-handyman-app/public/Logo.png" alt="Prime Handyman" class="nav-logo">
+          <span class="brand-name">Prime Handyman</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Everyday Fixes.<br><span class="highlight">Prime Quality.</span></h1>
+          <p class="hero-subtitle">Professional handyman services in Glendale, AZ — reliable, transparent, accountable.</p>
+          <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
       </div>
     </header>
 
-    <main class="container">
-      <section id="services" class="card">
-        <h2>Our Services</h2>
-        <p>General repairs, maintenance, installations, and small renovations — fast, reliable, and professional.</p>
-        <ul class="services-list">
-          <li>Handyman repairs & troubleshooting</li>
-          <li>Fixture and hardware installation</li>
-          <li>Door, window and trim work</li>
-          <li>Small plumbing & electrical tasks</li>
-        </ul>
-      </section>
-
-      <section id="about" class="card">
-        <h2>About Us</h2>
-        <p>Locally owned in Glendale, AZ. We focus on clear pricing, timely arrival, and work completed right the first time.</p>
-      </section>
-
-      <section id="ethos" class="card ethos">
-        <h2>Our Ethos</h2>
-        <div class="ethos-grid">
-          <div class="ethos-item">
-            <img src="../prime-handyman-app/public/Professional.png" alt="Professional">
-            <strong>Professional</strong>
-          </div>
-          <div class="ethos-item">
-            <img src="../prime-handyman-app/public/Accountable.png" alt="Accountable">
-            <strong>Accountable</strong>
-          </div>
-          <div class="ethos-item">
-            <img src="../prime-handyman-app/public/Transparent.png" alt="Transparent">
-            <strong>Transparent</strong>
+    <main>
+      <section id="ethos" class="ethos-section">
+        <div class="container">
+          <h2>Our Promise</h2>
+          <div class="ethos-grid">
+            <div class="ethos-card">
+              <img src="../prime-handyman-app/public/Professional.png" alt="Professional">
+              <h3>Professional</h3>
+              <p>Skilled, reliable work on every job.</p>
+            </div>
+            <div class="ethos-card">
+              <img src="../prime-handyman-app/public/Accountable.png" alt="Accountable">
+              <h3>Accountable</h3>
+              <p>Clear pricing and honest communication.</p>
+            </div>
+            <div class="ethos-card">
+              <img src="../prime-handyman-app/public/Transparent.png" alt="Transparent">
+              <h3>Transparent</h3>
+              <p>No hidden fees, no surprises.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="card contact-card">
-        <h2>Contact</h2>
-        <p class="contact-line">Phone: <a href="tel:6232278884">623-227-8884</a></p>
-        <p class="contact-line">Email: <a href="mailto:bryan.lewis@prime-handyman-az.com">bryan.lewis@prime-handyman-az.com</a></p>
-        <p class="contact-line">Website: <a href="https://prime-handyman-az.com">prime-handyman-az.com</a></p>
-        <p class="contact-line">Address: 6434 W Cavalier Dr, Glendale, AZ 85301</p>
+      <section id="services" class="services-section">
+        <div class="container">
+          <h2>What We Fix</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>Repairs & Troubleshooting</h3>
+              <p>From leaky faucets to squeaky doors, we diagnose and fix the problem right.</p>
+            </div>
+            <div class="service-card">
+              <h3>Installations</h3>
+              <p>Fixtures, hardware, shelving, and more installed with precision.</p>
+            </div>
+            <div class="service-card">
+              <h3>Doors & Windows</h3>
+              <p>Repair, adjustment, and trim work for smooth operation.</p>
+            </div>
+            <div class="service-card">
+              <h3>Plumbing & Electrical</h3>
+              <p>Small jobs handled safely and code-compliant.</p>
+            </div>
+            <div class="service-card">
+              <h3>Drywall & Carpentry</h3>
+              <p>Patches, holes, and custom woodwork.</p>
+            </div>
+            <div class="service-card">
+              <h3>General Maintenance</h3>
+              <p>Preventative upkeep to keep your home in top shape.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2>About Prime Handyman</h2>
+          <p>Locally owned and operated in Glendale, Arizona. We're Bryan Lewis and the Prime Handyman team — your trusted neighbor for reliable, professional service. Whether it's a quick fix or a bigger project, we show up on time, do the work right, and stand behind every job.</p>
+          <p>Our reputation is built on skill, honesty, and a commitment to getting the job done the first time.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Ready to Get Started?</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Get In Touch</h3>
+              <p><strong>Phone:</strong> <a href="tel:6232278884">(623) 227-8884</a></p>
+              <p><strong>Email:</strong> <a href="mailto:bryan.lewis@prime-handyman-az.com">bryan.lewis@prime-handyman-az.com</a></p>
+              <p><strong>Location:</strong> Glendale, AZ 85301</p>
+            </div>
+            <div class="contact-form-note">
+              <p>Call or email us for a free estimate. We're ready to help.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="footer">
       <div class="container">
-        <small>© <span id="year"></span> Prime Handyman Service LLC — All rights reserved.</small>
+        <p>&copy; <span id="year"></span> Prime Handyman Service LLC. All rights reserved.</p>
       </div>
     </footer>
 
